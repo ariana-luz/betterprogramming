@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    display: grid;
+    display: block;
     justify-content: center;
     align-items: center;
     background-color: #e4e9ff;
@@ -24,7 +24,7 @@ body {
 }
 
 header, footer {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -34,9 +34,7 @@ header, footer {
 nav {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
     margin: 0 50px;
-    padding: 10px 0 25px 0;
 }
 
 a {
@@ -141,3 +139,31 @@ h2 {
     text-align: center;
 }
 
+@media (min-width: 600px) {
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 600px;
+		background-color: #e4e9ff;
+	}
+
+	header {
+		padding: 20px;
+		margin: 0 10px 0 5px ;
+	}
+
+	img {
+		max-width: 270px;
+	}
+
+	nav {
+		padding: 10px 3px 5px 5px;
+		margin: 0;
+	}
+
+	nav > a {
+		font-size: 14px;
+		padding-right: 40px;
+	}
+}
