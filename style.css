@@ -1,4 +1,9 @@
+html {
+    height: 100%;
+}
 body {
+    min-height: 100%;
+    min-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -7,31 +12,29 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 550px;
     background-color: #e4e9ff;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    margin: 0;
 }
 
 .img-header {
-    width: 550px;
-    height: auto;
+    width: 100%;
 }
 
-.img-main {
-    padding: 20px 0;
-}
-
-header, .footer {
+header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 20px 0;
+    padding: 0;
     margin: 0;
-    max-width: 510px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
     margin: 0 50px;
     padding: 10px 0 25px 0;
 }
@@ -45,30 +48,41 @@ a {
     font-family: Helvetica, sans-serif;
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.img-main {
+    width: 80%;
+    padding: 10px;
+}
+
 .text {
-    width: 540px;
     text-align: center;
     font-family: 'Nunito', system-ui;
-    font-size: 40px;
-    font-style: normal;
+    max-width: 100%;
+    padding: 1em;
     margin: 0;
+    overflow: auto;
+    color: #23285a;
 }
 
 h1 {
+    font-size: 3em;
+    width: 100%;
     margin: 0;
 }
 
 p {
     font-family: 'Helvetica';
-    font-size: 30px;
+    font-size: 1.5em;
     padding: 10px;
     margin: 0;
-}
-
-h2 {
-    font-family: 'Nunito', system-ui;
-    font-size: 30px;
-    font-style: normal;
 }
 
 .galeria {
@@ -83,6 +97,7 @@ h2 {
     "programmer-4"
     "programmer-5"
     "programmer-6";
+    padding: 1em;
 }
 
 .img-galeria {
@@ -113,15 +128,16 @@ h2 {
 
 .text1 {
     display: block;
+    text-align: left;
+    font-size: 15px;
+    color: #23285a;
+}
+
+h2 {
+    font-family: 'Nunito', system-ui;
+    font-size: 25px;
+    font-style: normal;
+    color: #23285a;
     text-align: center;
 }
 
-footer {
-    padding: 20px 0 20px 0;
-    margin: 0;
-    max-width: 510px;
-}
-
-.text2 {
-    text-align: left;
-}
