@@ -84,7 +84,7 @@ p {
 .galeria {
     display: grid;
     place-items: center;
-    /* justify-items: stretch; */
+    justify-items: stretch;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
@@ -97,7 +97,7 @@ p {
 }
 
 .img-galeria {
-    max-width: 80%;
+    max-width: 100%;
     padding: 10px;
 }
 
